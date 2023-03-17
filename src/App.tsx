@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import ChessRankingService from "./ChessRankingService";
+import {downloadExcel} from "./Utils";
 
 function App() {
     const champions = ChessRankingService.getChampions();
@@ -8,7 +9,7 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <h3>Chess Champions out of {ChessRankingService.getPlayers().length} players</h3>
+                <h3>Chess Champions out of <a href="" onClick={()=> downloadExcel(ChessRankingService.getPlayers())}>{ChessRankingService.getPlayers().length} players</a></h3>
                 <table>
                     <tbody>
                     <tr>
