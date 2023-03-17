@@ -17,7 +17,7 @@ On attachera une importance particulière aux points suivants:
 # Résultats
 
 https://kevinkhau.github.io/chess-champions/
-![chess-champions-results.png](public/chess-champions-results.png)
+[![chess-champions-results.png](public/chess-champions-results.png)](https://kevinkhau.github.io/chess-champions/)
 
 Consultez [ChessRankingService.tsx](src/ChessRankingService.tsx) pour un premier aperçu de l'algorithme.\
 Les données d'échantillons de joueurs ont été récupérées sur https://chess-rankings.com/.
@@ -30,7 +30,7 @@ Cas particuliers considérés :
 - Un seul joueur
 - Plusieurs joueurs avec le même elo et âge
 - Plusieurs joueurs avec le même nom, elo, et âge
-![Testing functions.png](public/testing-functions.png)
+[![Testing functions.png](public/testing-functions.png)](src/ChessRankingService.test.tsx)
 
 ## Performances
 - Complexité en temps : **0(n)** avec deux parcours de liste
